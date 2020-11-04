@@ -107,9 +107,9 @@ function setMainImage(imgSrc) {
             chroma = seriously.effect('chroma');
             chroma.source = seriouslyimage;
             target.source = chroma;
-            const r = 98 / 255;
-            const g = 175 / 255;
-            const b = 116 / 255;
+            const r = 98 / 255,
+                g = 175 / 255,
+                b = 116 / 255;
             chroma.screen = [r, g, b, 1];
             seriously.go();
             mainImage = new Image();
@@ -119,7 +119,6 @@ function setMainImage(imgSrc) {
                 drawCanvas();
             };
         };
-        image.src = imgSrc;
     }
 }
 
